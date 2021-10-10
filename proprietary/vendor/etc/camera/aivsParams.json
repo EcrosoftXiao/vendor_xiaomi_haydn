@@ -1,0 +1,77 @@
+{
+    "humanSeg_depth": {
+        "quantization": "int8",
+        "dlc_name": "model1.dlc",
+        "md5_code": "7382b49e9a66554fd786a81eb2576a6b",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "dpt",
+                "layer": "convolution_29",
+                "shape": [1, 256, 256, 1]
+            },
+            {
+                "name": "seg",
+                "layer": "softmax_0",
+                "shape": [1, 512, 512, 2]
+            }
+        ]
+    },
+    "saliency": {
+        "quantization": "int8",
+        "dlc_name": "model2.dlc",
+        "md5_code": "9f39ac57c80533310b579593a2672348",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 256, 256, 1]
+            }
+        ]
+    },
+    "humanSegPreview": {
+        "quantization": "int8",
+        "dlc_name": "model3.dlc",
+        "md5_code": "46eb1ffd2367d845d600f944d3d4fc41",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 256, 256, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 512, 512, 2]
+            }
+        ]
+    },
+    "portrait_blur":{
+        "quantization": "int8",
+        "dlc_name": "model4.dlc",
+        "md5_code": "10abf65a93a703b05c9c62147c6e34cb",
+        "inputs": [
+            {
+                "name": "data",
+                "shape": [1, 800, 800, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "score",
+                "shape": [1, 800, 800, 2]
+            }
+        ]
+    }
+}
+
