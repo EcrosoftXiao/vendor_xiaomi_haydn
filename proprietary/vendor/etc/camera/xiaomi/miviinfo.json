@@ -208,5 +208,17 @@
                 }
             ]
         }
-    ]
+    ],
+    "AlgorithmImpl" : [
+        {
+             "Function": "BOKEH_REAR",
+             "ImplInfo":[
+                 {
+                      "RoleName":"Bokeh",
+                      "ResolutionFlag":"Fix"
+                 }
+             ]
+        }
+    ],
+    "Platform": "haydn"
 }

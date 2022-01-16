@@ -59,6 +59,12 @@
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41818000, 0xFF,
                        0x41800000, 0xFF, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43430100, 0x28C5,
                        0x43400000, 0xFFFF, 0x4281C000, 2000" />
+        <Config
+            Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="lahaina"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000, 0x840, 0x40800100, 0xFFF, 0x40800200, 0x94C, 0x41818000, 0xFF,
+                       0x41800000, 0xFF, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43430100, 0x28C5,
+                       0x43400000, 0xFFFF, 0x4281C000, 2000" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -602,7 +608,7 @@
         <!-- LPM_BIAS_HYST resource opcode, value-->
         <!-- Type="", Performance mode -->
         <Config
-            Id="0x00001091" Enable="true" Target="lahaina"
+            Id="0x00001091" Enable="false" Target="lahaina"
             Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1555, 0x40800100, 691, 0x40800200, 1670,
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1" />
 
